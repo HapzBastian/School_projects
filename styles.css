@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&family=Square+Peg&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* a links */
+
+a{
+   color: white;
+   text-decoration: none;
+}
+
+/* Heading & body types */
+
+h1{
+    font-family: 'Square Peg', cursive;
+    font-size: 65px;
+    text-align: center;
+}
+h2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 55px;
+}
+h3{
+    font-family: 'Square Peg', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+p{
+    font-family: 'Quicksand', sans-serif;
+}
+span{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.funny-text{
+   font-family: 'Square Peg', cursive;
+   font-size: 28px;
+}
+
+.fragt{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.fragt > i {
+    padding-right: 15px;
+}
+
+.topnav {
+    background-color: #355674;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .nav-logo{
+    width: 120px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: #feffb0;
+  }
+
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  /* Forside Hero */
+ .hero{
+    width: auto;
+ }  
+ .hero-picture{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    object-position: right 30%;
+    z-index: 1;
+ }
+ .img-overlay{
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    background-color: #C1ADCE93;
+ }
+
+ .hero-overlay{
+    height: 90vh;
+    width: 100%;
+    z-index: 3;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+ }
+
+
+ .basic-btn{
+    cursor: pointer;
+    margin-top: 12%;
+    padding: 14px 23px;
+    height: 50px;
+    width: 600px;
+    border: none;
+    border-radius: 101002px;
+    color: white;
+ }
+
+ .basic-btn:hover, .submit-btn:hover{
+   scale: 0.95;
+ }
+ 
+ .full-opacity{
+    background-color: #9478A7;
+ }
+
+ .submit-btn{
+   cursor: pointer;
+   margin-top: 3%;
+   padding: 14px 23px;
+   height: 50px;
+   width: 100%;
+   border: none;
+   border-radius: 101002px;
+   color: white;
+}
+
+ .border{
+   border: 1px solid white;
+   background-color: transparent;
+ }
+
+
+ .best-sellers{
+    background-color: #C1ADCE;
+    text-align: center;
+    padding: 80px 0px;
+    color: #fff;
+    height: fit-content;
+ }
+
+ .best-sellers > h2{
+   padding-bottom: 40px;
+ }
+
+ .grid-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+   grid-gap: 35px;
+   margin: 0 auto;
+   max-width: 1140px;
+   padding: 10px;
+ }
+ 
+
+ .grid-item{
+    text-align: left;
+    background-color: #9478A7;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 8px 10px #6b4386;
+ }
+
+ .grid-item:hover{
+   scale: 1.1;
+   box-shadow: 8px 10px #58257a;
+ }
+ .grid-item > img{
+    max-width: 100%;
+    border-radius: 15px 15px 0px 0px;
+ }
+
+ .text-overlay{
+    padding: 10px;
+ }
+
+ .product-name{
+   font-family: 'Quicksand';
+   font-weight: 300;
+   font-size: 18px;
+ }
+
+ .product-categorie{
+   font-family: 'Quicksand';
+   font-weight: 500;
+   font-size: 18px;
+   padding-bottom: 10px;
+ }
+
+ .product-price{
+   font-family: 'Quicksand';
+   font-weight: 400;
+   font-size: 26px;
+ }
+
+
+
+ /* Mobilvisning */
+ @media (max-width: 767px) {
+   .grid-container {
+     grid-template-columns: 1fr;
+     grid-gap: 55px;
+     padding: 20px;
+   }
+   .grid-item > img{
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+   }
+   .grid-item:hover{
+      scale: 1;
+      box-shadow: 8px 10px #58257a;
+    }
+    .basic-btn{
+      width: 200px;
+   }
+ }
+
+.testimonials{
+   text-align: center;
+   padding: 80px 0px;
+   height: fit-content;
+}
+
+.testimonials > h2{
+   padding-bottom: 40px
+}
+
+.grid-container-testimonials{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(358px, 1fr));
+  grid-gap: 35px;
+  padding: 10px;
+  max-width: 1300px;
+  margin-inline: auto;
+}
+
+.testimonial-card{
+   display: grid;
+   margin: 0 auto;
+   background-color: #D7E6EC4D;
+   border-radius: 10px;
+   width: 358px;
+   height: 310px;
+   padding: 20px;
+}
+
+.testimonial-card > p{
+   padding-bottom: 40px;
+}
+
+.img-overlay-kontakt{
+   z-index: 2;
+   position: absolute;
+   width: 100%;
+   height: 90%;
+   background-color: #355674B2;
+}
+
+.hero-overlay > h3 {
+   padding: 10px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 25px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Quicksand';
+  font-size: 14px;
+}
+
+footer{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 40px;
+   background-color: #355674;
+   color: white;
+}
+
+.center{
+   text-align: center;
+}
+
+.footer-logo{
+   width: 150px;
+}
+
+footer > div > .funny-text{
+   font-size: 40px;
+}
+
+footer > div > img{
+   width: 50px;
+}
+
+@media (max-width: 767px) {
+   footer{
+   flex-direction: column;
+   text-align: center;
+   }
+
+   footer > div{
+      padding-bottom: 20px;
+   }
+ }
+
+
+ .Linkpoint{
+   width: 100%;
+   height: 100vh;
+   background-color: #C1ADCE;
+   display: grid;
+   place-content: center;
+   align-items: center;
+ }
+ 
+ .slider {
+   height: 100vh;
+   width: 100%;
+}
+
+/* 
+
+   Vores Slider Buttons område.
+
+*/
+
+.slider .slider-buttons {
+
+   justify-content: space-between;
+   display: flex;
+   margin: 10px 0 0 0;
+}
+
+/* 
+
+   Vores slider´s slide.
+
+*/
+
+.slider .slider-slides .slider-slide{
+   height: 100vh;
+   width: 100%;
+   object-fit: cover;
+}
+
+.slider-slides{
+   position: relative;
+}
+
+.slider-slides::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(48, 118, 139, 0.411);
+}
+
+.slider-slides .overlay{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.overlay{
+   display: grid;
+   place-content: center;
+   width: 80%;
+   text-align: center;
+   padding: 0 2%;
+}
+
+.slider-slides .overlay img {
+   max-width: 60%;
+   max-height: 100%;
+}

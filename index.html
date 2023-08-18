@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS & JAVASCRIPT LINKED -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <!-- CSS & JAVASCRIPT LINKED -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ab2932c3ac.js" crossorigin="anonymous"></script>
+
+    <title>Legekrogen</title>
+</head>
+<body>
+    <div class="fragt"><i class="fa-solid fa-truck fa-bounce fa-sm"></i>Fri fragt ved køb over 499,-</div>
+    <div class="topnav" id="myTopnav">
+
+        <a href="index.html"><img class="nav-logo" src="assets/logo/legekrogen_logo.png" alt=""></a>
+
+        <div class="nav-items">
+        <a href="#home" class="active">Forside</a>
+        <a href="#news">legetøj</a>
+        <a href="#contact">Udtaelser</a>
+        <a href="#about">Kundeklub</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i></a>
+    </div>
+      </div>
+      <section class="slider" id="slider01">
+        <div class="slider-slides">
+            <img class="slider-slide" src="" alt="">
+            <div class="overlay">
+                <div class="hero-overlay">
+                    <h1>At lege er at leve</h1>
+                    <p>Her hos os har vi et stort udvalg af legetøj i høj kvalitet</p>
+                    <a href="linkpoint.html"><button class="basic-btn full-opacity">LÆS MERE <i class="fa-solid fa-angles-right fa-beat-fade"></i></button></a>
+                    </div>
+             </div>
+        </div>
+            </div>
+        </section>
+
+<section class="best-sellers">
+
+    <h3>Et udpluk af vores</h3>
+    <h2>LEGETØJ</h2>
+
+    <!-- grid-items skal hentes fra et array med objekter gerne i javascript -->
+    <div class="grid-container" id="product-container"></div>
+    
+    <a href="linkpoint.html"><button class="basic-btn border">GÅ TIL LEGETØJ <i class="fa-solid fa-angles-right fa-beat-fade"></i></button></a>
+</section>
+
+<section class="testimonials">
+
+    <h3>Vores Kunder</h3>
+    <h2>UDTALER</h2>
+
+        <!-- testimonial-card skal hentes fra et array med objekter gerne i javascript -->
+        <div class="grid-container-testimonials" id="testimonial-container"></div>
+
+    <!-- <div class="grid-container-testimonials">
+        <div class="testimonial-card">
+            <p>“Pakken kom dagen efter jeg bestilte. Der blev jeg positivt overrasket, 
+             der står på deres hjemmeside at leveringstiden er 2-4 hverdage. 
+             Og min lille Hugo elsker sin nye træhest.”</p>
+             <span class="funny-text">- Heidi, mor til Hugo på 3 år</span>
+            </div>
+        <div class="testimonial-card">
+            <p>“Efter min gode ven Lars tippede mig om Legekrogen.dk, har jeg ikke længere problemer med at købe de perfekte julegaver. Tak til Legekrogen. Og Lars”</p>
+             <span class="funny-text">- Karsten Hansen, Morfar</span>
+            </div>
+        <div class="testimonial-card">
+            <p>“Jeg fik varen tilsendt i den forkerte farve, men da jeg kontaktede Legekrogens kundeservice, var de meget hurtige til at sende mig den rigtige farve. Jeg fik endda en gratis slikpose med. Det var meget lækkert”</p>
+             <span class="funny-text">- Omar, onkel til Anton på 11 år</span>
+            </div>
+    </div> -->
+</section>
+
+<section class="kontakt">
+    <img class="hero-picture" src="assets/heros/produkter.jpg" alt="">
+    <div class="img-overlay-kontakt"></div>
+</div>
+    <div class="hero-overlay">
+    <h3>Kunne du også tænke dig at blive medlem af vores</h3>
+    <h2>Kundeklub?</h2>
+
+      <form id="myForm" action="" method="post">
+        <input type="text" id="fullName" name="fullName" placeholder="Fulde navn" required>
+        
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        
+        <textarea id="toyTarget" name="toyTarget" rows="4" placeholder="Hvem køber du legetøj til?" required></textarea>
+        
+<a href="linkpoint.html"><button class="submit-btn full-opacity" type="submit">BLIV MEDLEM NU!</button></a>
+      </form>
+
+    </div>
+</section>
+
+<footer>
+    <div>
+        <p class="funny-text">kundeservice</p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:kontakt@legehjørnet.dk">kontakt@legehjørnet.dk</a></p>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:+4523456789">+45 2345 6789</a></p>
+    </div>
+    <div class="center">
+        <p class="funny-text">kundeservice</p>
+        <img src="assets/icons/icons8-facebook-24.svg" alt="">
+        <img src="assets/icons/icons8-instagram-24.svg" alt="">
+    </div>
+    <div><img class="footer-logo" src="assets/logo/legekrogen_logo.png" alt=""></div>
+</footer>
+</body>
+</html>
